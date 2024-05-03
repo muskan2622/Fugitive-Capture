@@ -1,0 +1,118 @@
+.city-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000; /* Set background color to black */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+
+  .section{
+    margin-bottom: 2rem;
+    color: #ccc;
+    font-size: 90px;
+  }
+  
+  .cop-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .cop-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff6f00;
+    animation: rotate 10s infinite linear;
+  }
+  
+  .cop-section {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .cop-section h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cop-section select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .city-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .city-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .city-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 5px solid #ccc;
+    transition: transform 0.3s ease;
+  }
+  
+  .city-image:hover {
+    transform: rotate(10deg);
+  }
+  
+  .next-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff6f00; /* Set background color to orange */
+    color: #fff; /* Set text color to white */
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #e65c00; /* Change background color on hover */
+  }
+  
+  .next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .city-container.zoom {
+    transform: scale(1.3); /* Adjust the scale factor as per your preference */
+  }

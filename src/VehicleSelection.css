@@ -1,0 +1,108 @@
+.vehicle-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+  .section {
+    color: #fff;
+    font-size: 90px;
+    margin-bottom: 2rem;
+  }
+  .cop-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .cop-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    animation: rotate 10s infinite linear;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cop-container h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cop-container select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .vehicle-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .vehicle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .vehicle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 5px solid #ccc;
+    transition: transform 0.3s ease;
+  }
+  
+  .vehicle-image:hover {
+    transform: rotate(10deg);
+  }
+  
+  .next-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff6f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #e65c00;
+  }
+  
+  .next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+  .vehicle-container.zoom {
+    transform: scale(1.2); /* Adjust the scale factor as per your preference */
+  }
+  
